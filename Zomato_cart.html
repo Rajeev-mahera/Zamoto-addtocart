@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato order page</title>
+    <link rel="stylesheet" href="zomato_cart.css">
+</head>
+<h1 class="h1">Welcome to Zomato </h1>
+<div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Zomato_Logo.svg/220px-Zomato_Logo.svg.png" alt="">
+</div>
+<div id="menu">
+    <div class="item">
+        <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP5meTScrx6o1vtLWNO7hovT-X6H_tjEX9YQ&s" alt="zomato" class="card-image">
+        <h4>Zomato spical burger</h4>
+        <p>300 indian repes</p>
+        <button onclick="addToCart(`zomato spicale burger ` ,300)">Add to cart</button>   
+    </div>
+        </div>
+        
+        <div class="card">
+         <div class="item">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScgdGULz_w9dcFshmSibENyRlzglKa6lzXyw&s" alt="burger" class="card-image">
+        <h4> burger best</h4>
+        <p>200 indian repes</p>
+        <button onclick="addToCart(`Classic burger ` , 200)">Add to cart</button>   
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI55-gR8QiA1UgOsS98CMPFGGssAGeaAxARA&s" alt="burger" class="card-image">
+       <h4> Swwet Doughnut</h4>
+       <p>250 indian repes</p>
+       <button onclick="addToCart(`Classic burger ` , 250)">Add to cart</button>   
+       </div>
+     </div>
+
+     <div class="card">
+     <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmsPAmNehot0zX6IYeC5l2g4G6iRAylCZZ8w&s" alt="pizza" class="card-image">
+        <h4>Pizza</h4>
+        <p>300 indian repes</p>
+        <button onclick="addToCart(`Veg pizza ` , 200)">Add to cart</button>
+    </div> 
+     </div>
+
+    </div>
+
+    <div id="cart">
+        <h2>cart</h2>
+        <ul id="cart-item"></ul>
+        <p id="total">Total:rs.0</p>
+        <button onclick="placeorder()">place order</button>
+    </div>
+    <script src="zomato_cart.js"></script> 
+</body>
+</html>
